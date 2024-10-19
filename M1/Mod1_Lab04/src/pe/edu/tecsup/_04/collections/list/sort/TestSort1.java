@@ -5,21 +5,21 @@ import java.util.Collections;
 import java.util.List;
 
 class TestSort1 {
-	
-	public static void main(String args[]) {
 
-		List<String> al = new ArrayList<String>();
-		al.add("Jose");
-		al.add("Zevallos");
-		al.add("Pedro");
-		al.add("Alberto");
-		al.add("Samir");
-		al.add("Angel");
+    public static void main(String[] args) {
 
-		//Collections.sort(al); // Ordenados en forma alfabetica.
-        Collections.sort(al,Collections.reverseOrder());  
+        List<String> al = new ArrayList<>();
+        al.add("Jose");
+        al.add("Zevallos");
+        al.add("Pedro");
+        al.add("Alberto");
+        al.add("Samir");
+        al.add("Angel");
 
-		for (String s : al) 
-			System.out.println(s);
-	}
+        //Collections.sort(al); // Ordenados en forma alfabetica.
+        al.sort(Collections.reverseOrder());
+
+        for (String s : al)
+            System.out.println(s);
+    }
 }
