@@ -1,36 +1,23 @@
 package pe.edu.tecsup._04.collections.list.ejercicio1;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 public class Aplicacion {
     public static void main(String[] args) {
-        Auto auto1 = new Auto("X002", "Nissan");
 
-        List<Auto> autos = new ArrayList<>();
-        autos.add(new Auto("X001", "Toyota"));
-        autos.add(new Auto("X002", "Nissan"));
-        autos.add(new Auto("Y003", "Peugeot"));
-        autos.add(new Auto("X003", "Peugeot"));
+        List<Character> characters = new ArrayList<>(Arrays.asList('T', 'E', 'C', 'S', 'U', 'P'));
+        System.out.println(characters);
 
-        for (Auto auto : autos) {
-            System.out.println(auto);
-        }
 
-        autos.sort(Collections.reverseOrder());
-//        Collections.sort(autos);
+        int indexS = characters.indexOf('S');
+        System.out.println("Index of 'S': " + indexS);
 
-        System.out.println(autos);
+        characters.set(indexS, 'N');
+        characters.set(characters.indexOf('U'), 'O');
+        characters.remove(Character.valueOf('P'));
 
-//        for (Auto auto : autos) {
-//            System.out.println(auto.getModelo());
-//        }
-
-        if (autos.contains(auto1)) {
-            System.out.println("El auto " + auto1.getNombre() + " se encuentra en la lista de autos");
-        } else {
-            System.out.println(auto1.getNombre() + " no se encuentra en la lista de autos");
-        }
+        System.out.println(characters);
     }
 }

@@ -5,27 +5,27 @@ import java.util.Set;
 
 public class TestMain5 {
 
-	public static void main(String[] args) {
-		
-		Set<String> nombres = new HashSet<String>();
-		
-		nombres.add("Juan");
-		nombres.add("Juan");
-		nombres.add("Miguel");
-		nombres.add("Miguel");
-		nombres.add("Miguel");
-		nombres.add("Miguel");
-		nombres.add("Julio");
-		nombres.add("Maria");		
+    public static void main(String[] args) {
 
-		System.out.println(nombres);
-		
-		// foreach
-		for (String string : nombres) {
-			System.out.println(string);
-		}
-		
+        Set<String> nombres = new HashSet<>();
 
-	}
+        nombres.add("Juan");
+        nombres.add("Juan");
+        nombres.add("Miguel");
+        nombres.add("Miguel");
+        nombres.add("Miguel");
+        nombres.add("Miguel");
+        nombres.add("Julio");
+        nombres.add("Maria");
+
+        System.out.println(nombres);
+
+        // foreach
+        for (String string : nombres) {
+            System.out.println(string);
+        }
+
+
+    }
 
 }

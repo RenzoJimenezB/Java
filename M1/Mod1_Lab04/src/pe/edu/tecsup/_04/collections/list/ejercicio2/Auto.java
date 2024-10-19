@@ -1,4 +1,4 @@
-package pe.edu.tecsup._04.collections.list.ejercicio1;
+package pe.edu.tecsup._04.collections.list.ejercicio2;
 
 import java.util.Objects;
 
