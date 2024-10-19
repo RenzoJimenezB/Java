@@ -14,7 +14,7 @@ public class Auto implements Comparable<Auto> {
     @Override
     public int compareTo(Auto o) {
         int compareModelo = modelo.compareTo(o.modelo);
-        int compareNombre = modelo.compareTo(o.nombre);
+        int compareNombre = nombre.compareTo(o.nombre);
 
         if (compareNombre == 0) {
             return compareModelo;
